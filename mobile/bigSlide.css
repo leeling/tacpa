@@ -3,11 +3,6 @@
     left: -25.625em; /*or width of your navigation panel*/
     width: 25.625em; /*should match the above value*/
 }
-
-/*  
-    Demo Specific Styles
-    ====================
-*/
 body {
     font-family: Roboto, Tahoma, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
     color: #101820;
@@ -103,7 +98,8 @@ body {
     font-variant: small-caps;
     font-size: 1.2em;
     color: #545454;
-    margin: 3px 0;
+    margin: 10px 0;
+    line-height: 1em;
 }
 /* index news area */
 .wrap h4 {
@@ -112,7 +108,6 @@ body {
 .wrap h4 a {
     padding: 0 6px;
     text-decoration: none;
-    text-transform: uppercase;
     font-size: 1.2em;
     color: #FF6A6A;
     border: 3px solid #FF6A6A;
@@ -156,6 +151,10 @@ em.date {
     font-size: 0.8em;
     font-weight: bold;
     color: #FF6A6A;
+}
+.subtext {
+    font-size: 0.95em;
+    color: #545454;
 }
 /* multiple-div article */
 article {
