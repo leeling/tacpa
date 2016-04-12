@@ -7,7 +7,7 @@ body {
     background-color: #EEE9E9;
 } 
 /* Scrollbar */ 
-::-webkit-scrollbar{width: 12px;}
+::-webkit-scrollbar{width: 8px;}
 
 ::-webkit-scrollbar-thumb{background-color:rgb(219, 219, 219); border-radius: 0;}
 ::-webkit-scrollbar-thumb:hover{background-color: #545454;}
@@ -15,10 +15,9 @@ body {
 ::-webkit-scrollbar-track{background-color:rgb(255, 255, 255);}
 /* End Scrollbar */
 #version {
-    float: left;
-    position: relative;
+    position: fixed;
     top: 10px;
-    left: 10px;
+    left: 160px;
     padding: 5px;
     text-decoration: none;
     color: #fff;
@@ -29,6 +28,9 @@ body {
     border: 2px solid #fff;
 }
 ol#social {
+    position: relative;
+    top: 0;
+    right: 150px;
     list-style-type: none;
     height: 20px;
     padding: 10px 10px 50px 0;
@@ -55,27 +57,26 @@ li#facebook a img {
     margin: 2px 0 0 15px;
 }
 div#fixedbanner {
-    width: 100vw;
-    text-align: center;
     position: fixed;
+    text-align: center;
 }
 header {
+    width: 100vw;
     background: rgba(217,50,64,0.95);
     text-align: center;
-    width: 1100px;
-    padding: 0 0 30px 0;
+    padding: 0 0 1.2em 150px;
     box-shadow: 2px 2px 30px #000;
-    margin: 0 auto;
 }
 h1 {
-    margin: none;
+    text-align: center;
+    width: 100vw;
 }
 h1 a {
-    width: 1000px;
+    margin: 0 auto;
+    text-decoration: none;
     color: #fff;
     font-family: 宋体, SimSun, STXihei, "华文细黑", Tahoma, Helvetica, sans-serif;
-    font-size: 50px;
-    text-decoration: none;
+    font-size: 1.5em;
 }
 h4 {
     color: #fff;
@@ -85,18 +86,23 @@ h4 {
     padding-bottom: 15px;
 }
 .tabnav {
+    width: 100vw;
     margin-top: 15px; 
     list-style-type: none;
+    line-height: 40px;
+    overflow-x: auto;
 }
 .tabnav li {
     display: inline;
 }
 .tabnav li a {
+    padding: 0.5em;
+    border: 2px solid transparent;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    padding: 10px 15px;
-    border: 2px solid transparent;
+    font-size: 0.9em;
+    font-family: Roboto, Tahoma, Helvetica, 宋体, SimSun, STXihei, "华文细黑", sans-serif;
 }
 #one {
     color: #545454;
@@ -134,22 +140,20 @@ h4 {
     background-color: #0D324D;
 }
 nav {
-    width: 170px;
+    width: 150px;
     height: 100vh;
     position: fixed;
     background-color: rgba(255,255,255,0.95);
-    top: 0px;
-    left: 50%;
-    margin-left: -730px;
+    top: 0;
+    left: 0;
 }
 nav ol {
-    width: 170px;
+    width: 150px;
     height: 100vh;
     overflow-y: auto; 
     position: fixed;
     top: 0;
-    left: 50%;
-    margin-left: -730px;
+    left: 0;
 }
 h5 {
     font-size: 16px;
@@ -189,14 +193,14 @@ nav ol li a:hover {
     transition: all 0.2s ease-in-out;
 }
 #content {
-    width: 1100px;
-    margin: 0 auto;
+    margin-left: 150px;
     background-color: #fff;
+    overflow-x: auto;
 }
 #content section {
     padding: 350px 30px 30px 30px;
     margin-bottom: 80px;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 h3 {
     font-weight: bold;
@@ -223,12 +227,17 @@ ul li p {
     color: #545454;
     overflow-y: auto;
 }
-.sidelink {
+ul li a {
     text-decoration: none;
+    color: #545454;
+    font-weight: bold;
+}
+.sidelink {
     padding: 3px;
     border: none;
-    color: #fff;
     background-color: #D93240;
+    text-decoration: none;
+    color: #fff;
     font-weight: bold;
 }
 .sidelink:hover {
