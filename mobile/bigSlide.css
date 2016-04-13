@@ -52,6 +52,10 @@ body {
     font-weight: bold;
     color: #fff;
 }
+.panel ol li {
+    display: inline;
+    list-style-type: none;
+}
 .mainLinks li {
     display: inline-block;
     margin: 5px 0;
@@ -255,7 +259,7 @@ article em {
 }
 /* footer styles */
 footer {
-    width: 100vw;
+    max-width: 80vw;
     float: left;
 }
 footer ul {
@@ -279,4 +283,37 @@ em.contact {
     color: #FF6A6A;
     font-size: 16px;
     border: 3px solid #FF6A6A;
+}
+.panel ol#social {
+    display: inline-block;
+    text-align: right;
+}
+.panel ol#social li {
+    background: none;
+    
+}
+.panel ol#social li a {
+    width: 40px;
+    height: 40px;
+}
+#twitter img {
+    margin-bottom: -5px;
+}
+#facebook img {
+    margin-bottom: 3px;
+}
+footer p {
+    margin-top: 3em;
+    text-align: center;
+    line-height: 1;
+}
+#backtop {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #545454;
+    font-weight: bold;
 }

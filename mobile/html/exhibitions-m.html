@@ -36,6 +36,10 @@
                     showIt.fadeIn(100);
                 });
             });
+            $('#backtop').click(function () {
+                 $("html, body").animate({ scrollTop: 0 }, 500);
+                 return false;
+             });
         });
         </script>
         <!--link to css-->
@@ -48,6 +52,11 @@
              <div id="menuBlock">
              <a href="#menu" class="menu-link">&#9776;</a>
              </div>
+        <ol id="social">
+              <li id="plurk"><a href="http://www.plurk.com/fancyfrontier" target="_blank"><img src="../../images/plogo.png" alt="plurk icon" width="35" height="35" title="開拓動漫官方噗浪" /></a></li>
+              <li id="twitter"><a href="https://twitter.com/fancyfrontier" target="_blank"><img src="../../images/tlogo.png" alt="twitter icon" width="45" height="45" title="開拓動漫官方 Twitter" /></a></li>
+              <li id="facebook"><a href="https://www.facebook.com/ffrontier" target="_blank"><img src="../../images/flogo.png" alt="facebook icon" width="30" height="30" title="開拓動漫官方 Facebook粉絲團" /></a></li>
+        </ol>
         <ul class="mainLinks">
             <li><a href="../index.html">回首頁 home</a></li>
             <li><a href="../html/about-m.html">關於我們 about</a></li>
@@ -154,7 +163,9 @@
                 <p>(關於「動漫文化美學特展」的詳細內容可參考8月號的介紹)</p>
             </div>
         </article>
-
+        <footer>
+            <p><a href="#top" ID="backtop"><span>回頁首&nbsp;&nbsp;return to top</span></a></p>
+        </footer>
     </div>
     </body>
 </html>
